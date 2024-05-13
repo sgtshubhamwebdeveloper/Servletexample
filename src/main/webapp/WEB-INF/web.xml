@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>books</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Myservlet</display-name>
+    <servlet-name>Myservlet</servlet-name>
+    <servlet-class>books.Myservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Myservlet</servlet-name>
+    <url-pattern>/myname</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>MyBookServlet</display-name>
+    <servlet-name>MyBookServlet</servlet-name>
+    <servlet-class>books.MyBookServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MyBookServlet</servlet-name>
+    <url-pattern>/ajinkyaservlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
